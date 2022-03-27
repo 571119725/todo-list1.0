@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/showblock.css">   
+        <link rel="stylesheet" type="text/css" href="css/funct.css">   
+    </head>
+    <body onbeforeunload="saveData()">
+        <div class='father'>
+            <div class='header'>
+                <span>todos</span>
+            </div>
+            <form class="input" target="#" >
+                <div id="xiala" class="pict1"><img src="image/xi.png" alt="下拉"></div>
+                <label><input autocomplete="off" id="todo" type="text" placeholder="What need to be done?" name="todo"></label>
+            </form>
+            <ul id="showtodo" class="whattodo">
+                <li class='showarea'> 
+                    <div class='showblock xuanzhong'>
+                        <img src='image/weixuanzhong.png' alt='是否选中'>
+                    </div>
+                    <input class="showdata" readonly ondblclick='this.readOnly=false' onchange='this.readOnly=true'>                    
+                    <div class='showblock delete'>
+                        <img src='image/xishanchu.png' alt='删除键'>
+                    </div>
+                </li>
+            </ul>
+            <ul id="another">
+                <li>
+                    <div class="funct function"  id="furtherfunct">
+                        <div>
+                            <span>0</span>
+                            <span> item left</span>
+                        </div>
+                        <div>
+                            <button id="button1">All</button>
+                            <button id="button2">Active</button>
+                            <button id="button3">Completed</button>
+                        </div>
+                        <div>
+                            <button id="clear">Clear completed</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="funct shallow1" id="shallow1"></li>
+                <li class="funct shallow2" id="shallow2"></li>
+            </ul>
+            <div class='infor'>
+                <span>Doube click to edit a todo</span>
+                <span>Created by petehunt</span>
+                <span>Part of TodoMVC</span>
+            </div>
+        </div>
+    </body>
+    <script src="deal.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+</html>

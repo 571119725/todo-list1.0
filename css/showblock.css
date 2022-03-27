@@ -1,0 +1,43 @@
+.whattodo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.editdata{
+    outline: 2px dashed #aaa;
+}
+.showarea{
+    margin:2px auto;
+    background-color:white ;
+    display: flex;
+    width: 690px;
+    height: 60px;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.10),0 5px 5px rgba(0,0,0,0.10),0 5px 5px rgba(0,0,0,0.10),0 5px 5px rgba(0,0,0,0.10);
+}
+.showarea input{
+    transition:all 0.5s;
+    font-size: 20px;
+    outline: none;
+    width:600px;
+    height:60px;
+    border: 0px;
+}
+.xuanzhong{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.xuanzhong img{
+    max-width:30px;
+    margin:auto 10px;
+}
+.delete{
+    visibility: hidden;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.delete img{
+    max-width:20px;
+    margin:auto 10px;
+}
